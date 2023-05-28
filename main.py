@@ -25,6 +25,7 @@ def readUserInput():
     return data
 
 def countBackwards(inputInt, divList):
+    divisible = isdivis(divList)
     inputInt += 1
     while True:
         inputInt -= 1
@@ -32,12 +33,11 @@ def countBackwards(inputInt, divList):
             break
 
         # MORE SOPHISTICATED SOLUTION:
-        divisible = isdivis(inputInt, divList)
-        retVal = divisible.byAll()
+        retVal = divisible.byAll(inputInt)
         if retVal:
             print(f"{ inputInt }: { retVal }")
             continue
-        retVal = divisible.byOne()
+        retVal = divisible.byOne(inputInt)
         if retVal:
             print(f"{ inputInt }: { retVal }")
         else:
