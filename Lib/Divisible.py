@@ -11,6 +11,7 @@ class IsDivisible:
                 continue
             else:
                 divisibleByAll = False
+                break
         if divisibleByAll:
             return "Testing"
         return None
