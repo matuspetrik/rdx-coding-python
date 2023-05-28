@@ -12,7 +12,7 @@ Write a program in Python that counts backwards from value provided by user to 1
 
 ## Usage:
 ```
-git pull git@github.com:matuspetrik/rdx-coding-python.git
+git clone git@github.com:matuspetrik/rdx-coding-python.git
 cd rdx-coding-python
 source env.sh
 python main.py
